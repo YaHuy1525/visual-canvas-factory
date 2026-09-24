@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const navigation = [
-  { label: "Dashboard", to: "/" as const },
-  { label: "AI Insights", to: "/insights" as const },
-  { label: "Research Gateway", to: "/research" as const },
-  { label: "Admin", to: "/admin" as const },
+  { label: "My Products", to: "/" as const },
+  { label: "My Insights", to: "/insights" as const },
+  { label: "Food Lookup", to: "/research" as const },
+  { label: "Account", to: "/admin" as const },
 ];
 
 export function AppShell({ children }: { children: ReactNode }) {

@@ -31,7 +31,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </header>
 
       {menuOpen && <button aria-label="Close navigation" className="fixed inset-0 z-20 bg-overlay lg:hidden" onClick={() => setMenuOpen(false)} />}
-      <aside className={cn("fixed bottom-0 left-0 top-16 z-30 w-64 border-r border-nav-border bg-nav px-4 py-6 text-nav-foreground transition-transform lg:translate-x-0", menuOpen ? "translate-x-0" : "-translate-x-full")}>
+      <aside className={cn("fixed bottom-0 left-0 top-16 z-30 w-64 border-r border-nav-border bg-nav px-4 py-6 text-nav-foreground transition-transform lg:translate-x-0", menuOpen ? "" : "-translate-x-full")}>
         <p className="mb-4 px-3 text-xs font-semibold uppercase text-nav-muted">Workspace</p>
         <nav className="space-y-1" aria-label="Main navigation">
           {navigation.map((item) => {
